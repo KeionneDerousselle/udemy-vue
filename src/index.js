@@ -6,7 +6,8 @@ new Vue({
     finishedLink: '<a href="https://google.com">Google</a>',
     counter: 0,
     x: 0,
-    y: 0
+    y: 0,
+    name: 'Keionne'
   },
   methods: {
     changeTitle: function(event) {
