@@ -12,12 +12,8 @@
 
 <body>
   <div id="app">
-    <button @click="counter++">Increase</button>
-    <button @click="counter--">Decrease</button>
-    <button @click="secondCounter++">Increase Second</button>
-    <button @click="secondCounter--">Decrease Second</button>
-    <p>Count: {{ counter }} | {{ secondCounter }}</p>
-    <p>The result is {{ result() }} | {{ output }} | {{ watchResult }}</p>
+    <button @click="changeLink">Click To Change The Link</button>
+    <a :href="link">Link</a>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
