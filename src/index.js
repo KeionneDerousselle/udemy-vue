@@ -6,6 +6,10 @@ new Vue({
   methods: {
     changeTitle: function(event) {
       this.title = event.target.value;
+    },
+
+    sayHello: function() {
+      return 'Hello!';
     }
   }
 });
