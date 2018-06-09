@@ -14,15 +14,13 @@
 <body>
   <div id="app">
     <div 
-      class="demo" 
-      @click="attachRed = !attachRed"
-      :class="divClasses"
+      class="demo"
+      :style="{backgroundColor: color}"
       ></div>
     <div 
       class="demo"
-      :class="{ red: attachRed }"
       ></div>
-    <div class="demo" :class="[color, { red: attachRed }]"></div>
+    <div class="demo"></div>
     <hr>
     <input type="text" v-model="color">
   </div>
