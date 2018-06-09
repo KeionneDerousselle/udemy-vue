@@ -12,23 +12,12 @@
 
 <body>
   <div id="app">
-    <h1 v-once>{{ title }}</h1>
-    <input type="text" v-on:input="changeTitle">
-    <p>{{ sayHello() }} - <a v-bind:href="link">Google</a></p>
-    <p v-html="finishedLink"></p>
-    <button v-on:click="increase(2, $event)">Click me</button>
-    <p>Count: {{ counter }}</p>
-    <p>Multiplier: {{ counter * 2 }}</p>
-    <p>The count is {{ counter > 10 ? 'greater than 10.' : 'less than 10.'}}</p>
-    <p v-on:mousemove="updateCoordinates">
-      Coordinates: {{ x }} / {{ y }}
-      - <span v-on:mousemove.stop="">DEAD SPOT</span>
-    </p>
-    <input type="text" v-on:keyup.enter="alertMe">
-    <div>
-        <input type="text" v-model="name">
-        <p>{{ name }}</p>
-    </div>
+    <button v-on:click="counter++">Increase</button>
+    <button v-on:click="counter--">Decrease</button>
+    <button v-on:click="secondCounter++">Increase Second</button>
+    <button v-on:click="secondCounter--">Decrease Second</button>
+    <p>Count: {{ counter }} | {{ secondCounter }}</p>
+    <p>The result is {{ result() }} | {{ output }}</p>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
