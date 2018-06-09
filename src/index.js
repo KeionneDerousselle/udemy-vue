@@ -4,9 +4,12 @@ new Vue({
     attachRed: false
   },
 
-  methods: {
-    changeLink: function() {
-      this.link = 'http://apple.com'
+  computed: {
+    divClasses: function() {
+      return {
+        red: this.attachRed,
+        blue: !this.attachRed
+      };
     }
   }
 });
