@@ -1,0 +1,23 @@
+{
+  "name": "udemy-vue",
+  "version": "1.0.0",
+  "description": "\"# udemy-vue\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/lite-server -c configs/lite-server.config.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KeionneDerousselle/udemy-vue.git"
+  },
+  "author": "Keionne Derousselle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KeionneDerousselle/udemy-vue/issues"
+  },
+  "homepage": "https://github.com/KeionneDerousselle/udemy-vue#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
