@@ -13,14 +13,9 @@
 
 <body>
   <div id="app">
-    <p v-if="show">You can see me!</p>
-    <p v-else>Now you see me!</p>
-    <p v-show="show">Do you also see me?</p>
-    <template v-if="show">
-      <h1>Heading</h1>
-      <p>Inside a template</p>
-    </template>
-    <button @click="show = !show">Switch</button>
+    <ul>
+      <li v-for="(ingredient, i) in ingredients">{{ ingredient }} ({{ i }})</li>
+    </ul>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
