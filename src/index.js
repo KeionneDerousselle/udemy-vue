@@ -9,7 +9,7 @@ new Vue({
     },
 
     sayHello: function() {
-      return 'Hello!';
+      return this.title;
     }
   }
 });
