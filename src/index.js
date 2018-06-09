@@ -10,6 +10,7 @@ new Vue({
     },
 
     sayHello: function() {
+      this.title = 'Something Else'
       return this.title;
     }
   }
