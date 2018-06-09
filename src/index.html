@@ -20,7 +20,7 @@
     <p>{{ counter }}</p>
     <p v-on:mousemove="updateCoordinates">
       Coordinates: {{ x }} / {{ y }}
-      - <span v-on:mousemove="dummy">DEAD SPOT</span>
+      - <span v-on:mousemove.stop="">DEAD SPOT</span>
     </p>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
