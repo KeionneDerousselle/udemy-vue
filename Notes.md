@@ -49,3 +49,7 @@ http://vuejs.org/guide/computed.html
 * Vue CLI - https://github.com/vuejs/vue-cli
 
 * Vue and Webpack - https://github.com/vuejs-templates/webpack
+
+* Components - http://vuejs.org/guide/components.html
+
+* Component Registration - https://vuejs.org/v2/guide/components-registration.html
