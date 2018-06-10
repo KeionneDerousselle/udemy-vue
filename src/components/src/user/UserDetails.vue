@@ -11,7 +11,7 @@
     props: {
       name: {
         type: String,
-        required: true
+        default: 'Keionne'
       }
     },
     methods: {
