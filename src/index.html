@@ -12,15 +12,89 @@
 </head>
 
 <body>
-  <div id="app">
-    <ul>
-      <li 
-        v-for="(ingredient, i) in ingredients"
-        :key="ingredient"
-      >
-        {{ ingredient }} ({{ i }})</li>
-    </ul>
-    <button @click="ingredients.push('salt')">Add New</button>
+  <div id="app" class="container">
+    <div class="text-center" v-if="winner">
+      <h1 v-if="winner == PLAYER_NAME" class="text-success">You Win!</h1>
+      <h1 v-else class="text-danger"> You Lose!</h1>
+    </div>
+    <div class="row text-center my-4">
+      <div class="col-12 col-sm-6">
+        <div>
+          <h1>You</h1>
+          <div class="health-bar">
+            <div 
+              :class="['current-health', playerCurrentHealthClass, {}]"
+              :style="playerCurrentHealthWidth"
+            >
+              <span> {{ playerHealth }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6">
+        <div>
+          <h1>Monster</h1>
+          <div class="health-bar">
+            <div 
+              :class="['current-health', monsterCurrentHealthClass]"
+              :style="monsterCurrentHealthWidth"
+            >
+              <span>{{ monsterHealth }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card w-100 text-center">
+        <div class="card-body">
+          <div v-if="!gameInProgress || winner">
+            <button class="btn btn-primary btn-lg" @click="startGame">Start New Game</button>
+          </div>
+          <div v-else-if="gameInProgress && !winner">
+            <button 
+              class="btn btn-danger btn-lg" 
+              @click="performPlayerAttack"
+              :disabled="monsterTurn"
+            >
+              Attack
+            </button>
+            <button 
+              class="btn btn-warning btn-lg" 
+              @click="performPlayerSpecialAttack"
+              :disabled="monsterTurn"
+            >
+              Special Attack
+            </button>
+            <button 
+              class="btn btn-success btn-lg" 
+              @click="healPlayer"
+              :disabled="monsterTurn"
+            >
+              Heal
+            </button>
+            <button 
+              class="btn btn-lg" 
+              @click="endGame"
+              :disabled="monsterTurn"
+            >
+              Give Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" v-if="gameInProgress">
+      <div class="card w-100 text-center my-3">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" v-for="log in actionLogs">
+            {{ log }}
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
