@@ -41,3 +41,11 @@ http://vuejs.org/guide/computed.html
 * Official Docs - Lists: http://vuejs.org/guide/list.html
 
 * Official Docs - The Vue Instance: http://vuejs.org/guide/instance.html
+
+* Official Docs - .vue files: http://vuejs.org/guide/single-file-components.html
+
+* Official Docs - `render()` method: http://vuejs.org/guide/render-function.html
+
+* Vue CLI - https://github.com/vuejs/vue-cli
+
+* Vue and Webpack - https://github.com/vuejs-templates/webpack
