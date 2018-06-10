@@ -19,6 +19,10 @@
 
 * Lists: https://jsfiddle.net/smax/o7uy2g0u/
 
+* The Vue Instance Code: https://jsfiddle.net/smax/9a2k6cja/2/
+
+* The VueJS Instance Lifecycle: https://jsfiddle.net/smax/jcgw7ak8/
+
 ## Further Links:
 
 * Official Docs - Getting Started: http://vuejs.org/guide/
@@ -35,3 +39,5 @@ http://vuejs.org/guide/computed.html
 * Official Docs - Conditionals: http://vuejs.org/guide/conditional.html
 
 * Official Docs - Lists: http://vuejs.org/guide/list.html
+
+* Official Docs - The Vue Instance: http://vuejs.org/guide/instance.html
