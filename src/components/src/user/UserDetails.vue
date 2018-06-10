@@ -10,8 +10,12 @@
   export default {
     props: {
       name: {
-        type: String,
-        default: 'Keionne'
+        type: Object,
+        default: function() {
+          return {
+            name: 'Keionne'
+          }
+        }
       }
     },
     methods: {
