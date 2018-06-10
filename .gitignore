@@ -1,2 +1,4 @@
 node_modules/
 src/basics/node_modules/
+src/components/node_modules/
+src/components/dist/
