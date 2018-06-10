@@ -103,8 +103,6 @@ new Vue({
 
   methods: {
     startGame: function () {
-      this.PLAYER_NAME = 'You';
-      this.MONSTER_NAME = 'Monster';
       this.monsterTurn = false;
       this.playerHealth = MAX_HEALTH;
       this.monsterHealth = MAX_HEALTH;
@@ -115,8 +113,8 @@ new Vue({
     endGame: function () {
       this.playerHealth = MAX_HEALTH;
       this.monsterHealth = MAX_HEALTH;
+      this.monsterTurn = false;
       this.actionLogs = [];
-
       this.gameInProgress = false;
     },
 
