@@ -1,12 +1,17 @@
 <template>
   <div>
-    <slot></slot>
+    <div>
+      <slot name="title"></slot>
+    </div>
+    <hr>
+    <div>
+      <slot name="content"></slot>
+    </div>
   </div>
 </template>
 
 <script>
-  export default {
-  };
+  export default {};
 </script>
 
 <style scoped>
