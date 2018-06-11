@@ -1,26 +1,29 @@
 <template>
-  <div>
-    <div>
-      <slot name="title"></slot>
-      <span style="color: #ccc"><slot name="subtitle">The Subtitle</slot></span>
-    </div>
-    <hr>
-    <div>
-      <slot></slot>
+  <div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="card quote">
+      <div class="card-header">
+        <slot name="title">Quote Title</slot>
+      </div>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p><slot></slot></p>
+        </blockquote>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-  export default {};
+  export default {
+  };
 </script>
 
 <style scoped>
-  div {
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 2px black;
-    padding: 30px;
-    margin: 30px auto;
-    text-align: center;
+  .quote {
+    cursor: pointer;
+  }
+
+  .quote:hover {
+    background-color: #ffe2e2;
   }
 </style>
