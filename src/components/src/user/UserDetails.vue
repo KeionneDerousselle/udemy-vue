@@ -3,7 +3,8 @@
     <h3>You may view the User Details here</h3>
     <p>Many Details</p>
     <p>User Name: {{ switchName() }}</p>
-    <button @click="onReset()">Reset Name</button>
+    <p>User Age: {{ age }}</p>
+    <button @click="resetName">Reset Name</button>
   </div>
 </template>
 
@@ -14,8 +15,9 @@
         type: String,
         required: true
       },
-      onReset: {
-        type: Function,
+
+      age: {
+        type: Number,
         required: true
       }
     },
@@ -25,8 +27,8 @@
       },
 
       resetName() {
-        // this.name = 'Keionne';
-        // this.$emit('nameWasReset', this.name);
+        this.name = 'Keionne';
+        this.$emit('nameWasReset', this.name);
       }
     }
   }
