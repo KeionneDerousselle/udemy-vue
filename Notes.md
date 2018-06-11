@@ -53,3 +53,9 @@ http://vuejs.org/guide/computed.html
 * Components - http://vuejs.org/guide/components.html
 
 * Component Registration - https://vuejs.org/v2/guide/components-registration.html
+
+* Props - http://vuejs.org/guide/components.html#Props
+
+* Custom Events - http://vuejs.org/guide/components.html#Custom-Events
+
+* Non-Parent-Child Communication - http://vuejs.org/guide/components.html#Non-Parent-Child-Communication
