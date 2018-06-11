@@ -59,3 +59,9 @@ http://vuejs.org/guide/computed.html
 * Custom Events - http://vuejs.org/guide/components.html#Custom-Events
 
 * Non-Parent-Child Communication - http://vuejs.org/guide/components.html#Non-Parent-Child-Communication
+
+* Slots - http://vuejs.org/guide/components.html#Content-Distribution-with-Slots
+
+* Dynamic Components - http://vuejs.org/guide/components.html#Dynamic-Components
+
+* Misc - http://vuejs.org/guide/components.html#Misc
