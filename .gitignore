@@ -2,3 +2,5 @@ node_modules/
 src/basics/node_modules/
 src/components/node_modules/
 src/components/dist/
+src/advanced-components/dist/
+src/advanced-components/node_modules/
