@@ -30,7 +30,7 @@
         </router-link>
         <router-link
           class="nav-item"
-          to="/user/10"
+          to="/user"
           tag="li"
           active-class="active"
         >
