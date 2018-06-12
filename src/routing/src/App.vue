@@ -1,18 +1,22 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-8 ofset-sm-2 col-md-6 offset-md-3">
-        <h1>Routing</h1>
-      </div>
+  <div>
+    <app-header></app-header>
+    <div class="container">
+      <router-view></router-view>
     </div>
   </div>
 </template>
 
 <script>
-  export default {};
+  import Header from './components/Header.vue';
+
+  export default {
+    components: {
+      'app-header': Header
+    }
+  };
 </script>
 
 <style scoped>
-
 </style>
 
