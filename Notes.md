@@ -65,3 +65,5 @@ http://vuejs.org/guide/computed.html
 * Dynamic Components - http://vuejs.org/guide/components.html#Dynamic-Components
 
 * Misc - http://vuejs.org/guide/components.html#Misc
+
+* route props example - https://github.com/vuejs/vue-router/blob/dev/examples/route-props/app.js
