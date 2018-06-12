@@ -77,13 +77,17 @@
       <hr>
       <div class="row">
         <div class="col-xs-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
-          <button class="btn btn-primary">Submit!
+          <button
+            class="btn btn-primary"
+            @click.prevent="submitted"
+          >
+            Submit!
           </button>
         </div>
       </div>
     </form>
     <hr>
-    <div class="row">
+    <div class="row" v-if="isSubmitted">
       <div class="col-xs-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
         <div class="card">
           <div class="card-header">
@@ -127,12 +131,19 @@
         sendMail: [],
         priorites: [ 'High', 'Medium', 'Low'],
         selectedPriority: 'High',
-        dataSwitch: true
+        dataSwitch: true,
+        isSubmitted: false
       }
     },
 
     components: {
       'app-switch': Switch
+    },
+
+    methods: {
+      submitted() {
+        this.isSubmitted = true;
+      }
     }
   };
 </script>
