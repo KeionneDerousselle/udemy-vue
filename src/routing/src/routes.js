@@ -3,15 +3,23 @@ import Home from './components/Home.vue';
 import UserStart from './components/user/UserStart.vue';
 import UserEdit from './components/user/UserEdit.vue';
 import UserDetails from './components/user/UserDetails.vue';
+import Header from './components/Header.vue';
 
 export const routes = [
   {
     path: '',
-    component: Home
+    name: 'Home',
+    components: {
+      default: Home,
+      'header-top': Header,
+    }
   },
   {
     path: '/user',
-    component: User,
+    components: {
+      default: User,
+      'header-bottom': Header
+    },
     children: [
       {
         path: '',
