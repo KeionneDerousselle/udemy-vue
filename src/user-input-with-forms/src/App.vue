@@ -43,10 +43,10 @@
       <div class="row">
         <div class="col-xs-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 form-group">
           <label for="male">
-            <input type="radio" id="male" value="Male"> Male
+            <input type="radio" id="male" value="Male" v-model="userData.gender"> Male
           </label>
           <label for="female">
-            <input type="radio" id="female" value="Female"> Female
+            <input type="radio" id="female" value="Female" v-model="userData.gender"> Female
           </label>
         </div>
       </div>
@@ -79,12 +79,12 @@
             <p>Age: {{ userData.age }}</p>
             <p style="white-space: pre">Message: {{ message }}</p>
             <p>
-              <strong>Send Mail?</strong>
+              <strong>Send Mail ?</strong>
             </p>
             <ul>
               <li v-for="item in sendMail" :key="item">{{ item }}</li>
             </ul>
-            <p>Gender:</p>
+            <p>Gender: {{ userData.gender }}</p>
             <p>Priority:</p>
             <p>Switched:</p>
           </div>
@@ -101,7 +101,8 @@
         userData: {
           email: '',
           password: '',
-          age: 23
+          age: 23,
+          gender: 'Female'
         },
 
         message: 'A New Text',
