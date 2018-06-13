@@ -7,6 +7,7 @@
 
 <script>
   import { mapGetters } from 'vuex';
+  import * as types from '../store/types';
 
   export default {
     computed: {
@@ -14,8 +15,8 @@
         // this way you can use your own computed properties with map getters
       },
       ...mapGetters({
-        counter: 'doubleCounter',
-        clicks: 'stringCounter'
+        counter: types.DOUBLE_COUNTER,
+        clicks: types.CLICK_COUNTER
       })
     }
   };
