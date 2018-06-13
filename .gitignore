@@ -10,3 +10,5 @@ src/user-input-with-forms/dist/
 src/user-input-with-forms/node_modules/
 src/routing/dist/
 src/routing/node_modules/
+src/state-management/dist/
+src/state-management/node_modules/
