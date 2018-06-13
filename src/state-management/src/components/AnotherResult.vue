@@ -9,9 +9,14 @@
   import { mapGetters } from 'vuex';
 
   export default {
-    computed: mapGetters({
-      counter: 'doubleCounter',
-      clicks: 'stringCounter'
-    })
+    computed: {
+      myOwnComputed() {
+        // this way you can use your own computed properties with map getters
+      },
+      ...mapGetters({
+        counter: 'doubleCounter',
+        clicks: 'stringCounter'
+      })
+    }
   };
 </script>
