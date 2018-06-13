@@ -67,3 +67,5 @@ http://vuejs.org/guide/computed.html
 * Misc - http://vuejs.org/guide/components.html#Misc
 
 * route props example - https://github.com/vuejs/vue-router/blob/dev/examples/route-props/app.js
+
+* Auto-namespacing - https://github.com/vuejs/vuex/releases/tag/v2.1.0
